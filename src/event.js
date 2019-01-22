@@ -1,11 +1,7 @@
 class Event {
-  constructor(title, text, dateTime) {
-    this.title = title;
+  constructor(text, dateTime) {
     this.text = text;
     this.dateTime = dateTime;
-  }
-  getTitle(){
-    return this.title;
   }
 
   getText(){

@@ -1,9 +1,10 @@
 class EventList {
-    constructor() {
-        this.planner = [];}
+  constructor() {
+		this.planner = [];
+	}
 
-        addEvent(desc){
-            this.planner.push(desc)
-        }
+  addEvent(desc){
+    this.planner.push(desc)
+  }
 
 }

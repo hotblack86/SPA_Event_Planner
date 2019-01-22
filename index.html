@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<center>
+<head>
+    
+</head>
+
+<body>
+  <h1>Event Planner</h1>
+  
+  <h2>Please add an Event</h2>
+  <input id="textbox" type="text" cols="40" rows="5"></input><br>
+
+  <label for="event-time">Choose a time for your Event</label><br>
+  <br><input type="datetime-local" id="event-time"
+       name="event-time" value="2019-01-22T16:30"
+       min="2019-01-22T00:00" max="2028-06-14T00:00">
+
+
+  <button id="button">Send</button>
+  
+  
+  <h2>Event List</h2> 
+  <ul id="eventlist"></ul>
+  
+  
+ 
+
+  <script type="text/javascript" src="./src/function_on_click.js"></script>
+  <script type="text/javascript" src="./src/event.js"></script>
+  <script type="text/javascript" src="./src/eventList.js"></script> 
+</body>
+</center>
+</html>
