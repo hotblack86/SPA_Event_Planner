@@ -1,7 +1,7 @@
 class Event {
   constructor(text, dateTime) {
     this.text = text;
-    this.dateTime = dateTime;
+    this.time = dateTime;
   }
 
   getText(){
@@ -9,7 +9,13 @@ class Event {
   }
 
   getDateTime(){
-    return this.dateTime;
+    return this.time;
   }
+
+  eventToDisplay() {
+    let div = document.createElement('div')
+    div.innerText = `${this.text} at ${this.time}`
+    return div;
+}
 
 }

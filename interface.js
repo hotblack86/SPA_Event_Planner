@@ -1,15 +1,29 @@
-//var messages = document.getElementById("messages");
-
+var list = document.getElementById("eventlist");
+var dateTime = document.querySelector('input[type="datetime-local"]');
 var textbox = document.getElementById("textbox");
-var eventTime = document.getElementById("event-time");
+//var eventTime = document.getElementById("event-time");
 var button = document.getElementById("button");
 
-function add_event() {
-  let event = new Event(textbox.value, eventTime.value);
-  let eventList = new EventList();
-  let newEvent = document.createElement("ul");
-  newEvent.innerText = `${event.text} \n ${event.time}`;
-  //eventList.addEvent(event);
+//var newDate = new Date();
 
+function add_event_1_class() {
+  let event1 = new Event(textbox.value, dateTime.value);
+  let newEvent = document.createElement("ul");
+  newEvent.innerText = `${event1.text} \n ${event1.time}`;
+  list.append(newEvent);
   textbox.value = "";
 }
+
+function add_event_2_classes() {
+  let event1 = new Event(textbox.value, dateTime.value);
+  let eventList = new EventList();
+  eventList.addEvent(event1);
+  events = eventList.elementToDisplay();
+  //list.innerHTML = "";
+  list.append(events);
+  textbox.value = "";
+}
+
+
+
+button.addEventListener("click", add_event_2_classes);
