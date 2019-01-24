@@ -4,13 +4,10 @@ class Event {
     this.time = dateTime;
   }
 
-  getText(){
-    return this.text;
-  }
+  getDateObject() {
+    return Date.parse(this.time)
+}
 
-  getDateTime(){
-    return this.time;
-  }
 
   eventToDisplay() {
     let div = document.createElement('div')

@@ -3,7 +3,9 @@
 <html>
 <center>
 <head>
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -29,21 +31,44 @@
     <ul id="eventlist"></ul>
   </div>  
 
-  <div>
-    <h2>Please enter your city to display local Weather</h2> 
-    <form>
-      <input id="city" type="text">
-      <button id="city-button">Submit</button>
-    </form>
-  </div> 
+  
+
+  <div class="container">
+    <h4>Enter your City below for local weather information</h4>
+    <header class="header">
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" id="search-txt">
+        <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+      </div>
+    </header>
+  
+    <main id="main">
+      
+      <div class="city-icon">
+        <div class="city-icon-holder">
+        <div id="city-name"></div>
+        <img src="" alt="" id="icon">
+          </div>
+      </div>
+      
+      <div class="temperature">
+        <div id="temp"></div>
+      </div>
+      
+      <div class="humidity">
+        <div id="humidity-div"></div>
+      </div>
+      
+    </main>
   
  
 
   
   <script type="text/javascript" src="./src/event.js"></script>
   <script type="text/javascript" src="./src/eventList.js"></script>
-  <script type="text/javascript" src="./src/weather.js"></script>
   <script type="text/javascript" src="./interface.js"></script>
+  <script type="text/javascript" src="./weatherController.js"></script>
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script> 
 </body>
 </center>
 </html>
