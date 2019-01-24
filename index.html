@@ -5,7 +5,7 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-
+  
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
     <h3>Date and Time</h3>
     <input type="datetime-local" id="event-time"
-        name="event-time" value="2019-01-22T16:30"
+        name="event-time" value=""
         min="2019-01-22T00:00" max="2028-06-14T00:00"><br>
 
 
@@ -29,6 +29,9 @@
   <div>
     <h2>Event List</h2> 
     <ul id="eventlist"></ul>
+    <button id="store-event-button">Store Events</button>
+    <button id="load-event-button">Load Events</button>
+    <button id="clear-event-button">Clear Events</button>
   </div>  
 
   
@@ -61,14 +64,13 @@
       
     </main>
   
- 
+    <script type="text/javascript" src="./src/event.js"></script>
+    <script type="text/javascript" src="./src/eventList.js"></script>
+    <script type="text/javascript" src="./interface.js"></script>
+    <script type="text/javascript" src="./weatherController.js"></script>
 
   
-  <script type="text/javascript" src="./src/event.js"></script>
-  <script type="text/javascript" src="./src/eventList.js"></script>
-  <script type="text/javascript" src="./interface.js"></script>
-  <script type="text/javascript" src="./weatherController.js"></script>
-  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script> 
+
 </body>
 </center>
 </html>
