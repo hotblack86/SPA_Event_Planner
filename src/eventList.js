@@ -1,7 +1,7 @@
 class EventList {
-  constructor(now = new Date()) {
+  constructor() {
     this.planner = [];
-    this.now = now;
+    this.now = new Date();
 	}
 
   addEvent(event){
@@ -13,7 +13,7 @@ class EventList {
     this.planner.forEach((event) => {
         let now = this.now;
         let eventDate = event.getDateObject();
-
+        debugger;
         if (eventDate > now) {
             upcoming.push(event);
         }
@@ -44,6 +44,7 @@ sortedUpcomingEvents() {
     this.sortedUpcomingEvents().forEach((event) => {            
         let eventHtml = event.eventToDisplay();
         div.appendChild(eventHtml);
+
     })
     return div 
   }
