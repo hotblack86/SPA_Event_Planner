@@ -18,8 +18,13 @@ Testing:
 Usage:
 
 - Open index.html
+
 - Select a future date from the dropdown calender (Submitted events with a past date won't be displayed)
 - Add an event description in the text field
 - Click the submit button or press enter/return
 - View all submitted events with their date and time in reverse chronologicall order
 - Click clear events to remove all events from the planner
+
+- Scroll further down the page for a section on local weather
+- Type in the name of the desired city and then press enter/return
+- The temperature and humidity level for that city will be displayed 
